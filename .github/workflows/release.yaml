@@ -17,7 +17,7 @@ jobs:
         Configuration: Release
         SolutionPath: Serial Monitor.sln
         VsixManifestPath: Serial Monitor\source.extension.vsixmanifest
-        VsixPath: Serial Monitor\bin\Release\SerialMonitor.vsix
+        VsixPath: Serial Monitor\bin\Release\Serial Monitor.vsix
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2   
