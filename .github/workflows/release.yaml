@@ -35,7 +35,7 @@ jobs:
     - name: Parse VSIX version
       run: |
         $manifestXml = [xml](Get-Content $env:VsixManifestPath -Raw)
-        Write-Output "::set-env Version=$manifestXml.PackageManifest.Metadata.Identity.Version"
+        echo "Version=$($manifestXml.PackageManifest.Metadata.Identity.Version)" >> $env:GITHUB_ENV
     - name: Build solution
       run: msbuild $env:SolutionPath /t:Rebuild
       env: 
