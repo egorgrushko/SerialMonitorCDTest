@@ -30,6 +30,8 @@ jobs:
       id: MsBuildSetup
       with:
         vs-version: '16.9'
+    - name: Restore NuGet Packages
+      run: nuget restore $env:SolutionPath
     - name: Parse VSIX version
       run: |
         $manifestXml = [xml](Get-Content $env:VsixManifestPath -Raw)
