@@ -32,7 +32,7 @@ jobs:
         vs-version: '16.9'
     - name: Parse VSIX version
       run: |
-        $manifestXml = [xml](Get-Content $env.VsixManifestPath -Raw)
+        $manifestXml = [xml](Get-Content $env:VsixManifestPath -Raw)
         $env:Version = $manifestXml.PackageManifest.Metadata.Identity.Version
     - name: Build solution
       run: msbuild $env:SolutionPath /t:Rebuild
