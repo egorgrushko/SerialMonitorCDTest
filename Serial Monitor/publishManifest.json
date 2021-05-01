@@ -1,0 +1,12 @@
+{
+	"identity": {
+		"internalName": "SerialMonitorCDTest"
+	},
+	"categories": [
+		"visual studio extensions",
+		"modelling",
+		"testing"
+	],
+	"overview": "../README.md",
+	"publisher": "EgorGrushko"
+} 
