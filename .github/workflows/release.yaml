@@ -63,6 +63,6 @@ jobs:
     - name: Publish extension to the Marketplace
       uses: cezarypiatek/VsixPublisherAction@0.1
       with:
-        extension-file: ""${{ env.VsixPath }}""
-        publish-manifest-file: ""${{ env.VsixPublishManifestPath }}""
+        extension-file: format('{0}{1}{2}', '"', ${{ env.VsixPath }}, '"')
+        publish-manifest-file: format('{0}{1}{2}', '"', ${{ env.VsixPublishManifestPath }}, '"')
         personal-access-code: ${{ secrets.VS_PUBLISHER_ACCESS_TOKEN }}  
