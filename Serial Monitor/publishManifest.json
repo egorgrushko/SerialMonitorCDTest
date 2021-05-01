@@ -3,9 +3,9 @@
 		"internalName": "SerialMonitorCDTest"
 	},
 	"categories": [
-		"visual studio extensions",
 		"modeling",
-		"testing"
+		"testing",
+		"performance"
 	],
 	"overview": "../README.md",
 	"publisher": "EgorGrushko"
