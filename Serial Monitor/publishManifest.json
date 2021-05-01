@@ -1,12 +1,10 @@
 {
-	"identity": {
-		"internalName": "SerialMonitorCDTest"
-	},
 	"categories": [
 		"modeling",
 		"testing",
 		"performance"
 	],
 	"overview": "../README.md",
-	"publisher": "EgorGrushko"
+	"publisher": "EgorGrushko",
+	"repo": "https://github.com/egorgrushko/SerialMonitorCDTest"
 } 

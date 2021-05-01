@@ -1,7 +1,7 @@
 # SerialMonitor
 This extension for Visual Studio allows you debug programs that work with serial port.
 
-##Features
+## Features
 - [x] Read data from serial port.
 - [x] Write data to serial port.
 - [x] A lot of settings.
